@@ -1,4 +1,6 @@
 """
+Adapted from a script written by Nick Matzopoulos (mtznic006@myuct.ac.za)
+
 This program is used to fine-tune a model for isiXhosa to English translation.
 """
 

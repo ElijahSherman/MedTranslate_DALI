@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Adapted from a script written by Nick Matzopoulos (mtznic006@myuct.ac.za)
+
 # --- Log File Configuration (for appending) ---
 LOG_DIR="${PWD}/logs"
 STDOUT_LOG="${LOG_DIR}/en_to_xh_sweep.o"

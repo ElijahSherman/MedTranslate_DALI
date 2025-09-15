@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Adapted from a script written by Nick Matzopoulos (mtznic006@myuct.ac.za)
+
+
 # This script evaluates all the models trained in the English to isiXhosa hyperparameter sweep
 
 # --- Log & Result File Configuration ---

@@ -1,4 +1,6 @@
 """
+Script written by Nick Matzopoulos (mtznic006@myuct.ac.za)
+
 Used to calculate the health term error rate of a model by taking in it's
 predictions, the reference file and the health terms to check and calculating how many 
 of the terms were translated correctly.

@@ -1,4 +1,6 @@
 """
+Script written by Nick Matzopoulos (mtznic006@myuct.ac.za)
+
 This program is used to generate translations of the given source file to compare to the 
 reference file for evaluation. 
 """

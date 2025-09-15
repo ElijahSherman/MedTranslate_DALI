@@ -1,4 +1,6 @@
 """
+Script written by Nick Matzopoulos (mtznic006@myuct.ac.za)
+
 Program used to manually calculate BLEU, chrF and chrF++ scores. This is done by giving the predictions
 made by a model and the reference translations.
 """
