@@ -31,9 +31,9 @@ def main():
     chrf = sacrebleu.corpus_chrf(predictions, references)
     chrf_plus = sacrebleu.corpus_chrf(predictions, references, word_order=2)
 
-    print("\n--- VERIFICATION RESULTS (using DEFAULT tokenizer) ---")
+    print("\n--- VERIFICATION RESULTS ---")
     print(f"Number of sentences: {len(predictions)}")
-    print(f"BLEU (with 'intl' tokenizer): {bleu.score:.2f}")
+    print(f"BLEU: {bleu.score:.2f}")
     print(f"chrF: {chrf.score:.2f}")
     print(f"chrF++: {chrf_plus.score:.2f}")
     print("--------------------------------------------------")
