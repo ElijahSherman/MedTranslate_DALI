@@ -49,7 +49,8 @@ python train_en_to_xh.py \
 
 
 ## Evaluation
-If the hyperparameter sweep was run then the script `eng_to_xho_eval.sh` / `xho_to_eng_eval.sh` can be run to evaluate all of the models. To evaluate an individual model:
+### BLEU, chrF and chrF++ Scores
+If the hyperparameter sweep was run, then the script `eng_to_xho_eval.sh` / `xho_to_eng_eval.sh` can be run to evaluate all of the models. To evaluate an individual model:
 1. Generate translations of the evaluation set using the model:
 ```
 python generate_translations.py \
@@ -64,4 +65,14 @@ python generate_translations.py \
 python verify_scores.py \
 		--predictions model1_predictions.xh \
 		--references dev.xh
+```
+
+### Health Term Error Rate
+To calculate the health term error rate run `evaluate_terminology.py` with the following command:
+```
+python evaluate_terminology.py \
+    --predictions model1_predictions.xh \
+    --references dev.xh \
+    --terms_csv medical_terms.csv \
+    --direction en_to_xh
 ```
